@@ -1,11 +1,49 @@
+#container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 31%) minmax(530px, 38%) 31%;
+    align-items: center;
+    justify-items: center;
+}
+
+#instruction-banner {
+    background-color: white;
+    font-size: 105%;
+    width: 250px;
+    min-width: 200px;
+    height: 50%;
+    padding: 20px;
+    margin: 0 30px;
+    overflow: scroll;
+    border: 1px solid #A3C6C4;
+    border-radius: 5px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+#centralColumn {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    row-gap: 3%;
+}
+
+#banner {
+    color: #0f2840;
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    margin: 5% 0 0 0;
+}
+
 #grid-border {
     width: 510px;
     height: 510px;
-    margin: 0 auto;
-    background-color: #ffeae6;
-    border-radius: 10px;
-    border: 1px solid #ffd0c2;
     padding: 10px;
+    background-color: #46484a;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
 .square {
@@ -15,29 +53,23 @@
     vertical-align: middle;
     line-height: 135%;
     padding: 5% 0;
-    border: 0.41px solid #ff5e2e;
+    background-color: #b8cfdb;
+    border: 0.41px solid #6C7A89;
 }
 
 .square.edge {
-    border: 0.41px solid #7A0800;
+    border: 0.41px solid #354649;
 }
 
-#banner {
-    color: #5e1600;
-    width: 100%;
-    margin: 2% auto;
-    text-align: center;
-}
 
 #submit-solution {
-    margin: 2% auto;
-    width: 20%;
-    height: 5%;
+    width: 50%;
+    height: 100%;
     padding: 5px 5px;
-    color: #7A0800;
+    color: #0f2840;
     font-size: 100%;
     border-radius: 10px;
-    border: 1px solid #ff5e2e;
+    border: 1px solid #A3C6C4;
 }
 
 .square.explosion {

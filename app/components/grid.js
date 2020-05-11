@@ -35,9 +35,9 @@ class Grid extends React.Component {
 
     calculateSeperatedTotal(occupiedCoordinates, x, y) {
         if (x == 6) {
-            return this.calculateAxisTotal(occupiedCoordinates, 'y', 'x', y).join(', ')
+            return this.calculateAxisTotal(occupiedCoordinates, 'y', 'x', y)
         } else if (y == 6) {
-            return this.calculateAxisTotal(occupiedCoordinates, 'x', 'y', x).reverse().join(', ')
+            return this.calculateAxisTotal(occupiedCoordinates, 'x', 'y', x)
         } 
     }
     
@@ -54,7 +54,7 @@ class Grid extends React.Component {
             }
         }
         if (countGroup > 0 || seperatedTotal.length === 0) seperatedTotal.push(countGroup)
-        return seperatedTotal
+        return seperatedTotal.join(', ')
     }
     
     isSquareSelected(square) {

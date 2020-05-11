@@ -2,10 +2,6 @@ import React from 'react'
 
 import { square, edge, explosion } from '../css/game.css'
 
-const explosionStyle = {
-    colour: "red"
-}
-
 class Square extends React.Component {
    
     generateTextContent() {
